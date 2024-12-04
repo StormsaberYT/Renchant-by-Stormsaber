@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "renchant",
+	"version": "${version}",
+	"name": "Renchant",
+	"description": "Revamping Minecraft's Enchantment System by Using Elemental Types and Abilities",
+	"authors": [
+		"Stormsaber!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/renchant/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.stormsaber.renchant.Renchant"
+		],
+		"fabric-datagen": [
+			"net.stormsaber.renchant.RenchantDataGenerator"
+		],
+		"client": [
+			"net.stormsaber.renchant.RenchantClient"
+		]
+	},
+	"mixins": [
+		"renchant.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
