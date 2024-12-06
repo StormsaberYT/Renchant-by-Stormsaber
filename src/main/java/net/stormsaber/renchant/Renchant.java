@@ -2,6 +2,7 @@ package net.stormsaber.renchant;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.stormsaber.renchant.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,9 +12,8 @@ public class Renchant implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		ModItems.registerModItems();
 	}
 
 }
 
-//modding go brrrr
